@@ -487,23 +487,23 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 
 <p><strong>올바른 화면방향으로 실행하세요.</strong> app이 세로화면과 가로화면 둘 다 지원한다면, app은 실행할 당시의 화면 방향과 동일한 방향에서 실행되어야 합니다. 하나의 화면 방향만 지원하는 app이라면 항상 그 방향으로만 app이 실행되어야 하고, 사용자는 필요에 따라 직접 기기를 돌려 사용하게 됩니다. 특별한 이유가 없는 한, 가로화면 상태의 app은 홈 버튼이 왼쪽에 있던, 오른쪽에 있던 간에 알아서 정확하게 화면 방향을 취해야 합니다. 자세한 사항은 <a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/layout">Layout</a>을 보세요.</p>
 
-<p><strong>Get to the action quickly.</strong> Avoid showing a splash screen, menus, and instructions that make it take longer to reach content and start using your app. Instead, let people dive right in. If your app needs tutorials or intro sequences, provide a way to skip them and don't show them to returning users.</p>
+<p><strong>빠르게 동작으로 넘어가세요.</strong> 스플래시 화면, 메뉴, 사용법은 콘텐츠까지의 접근과 app의 실제 사용을 더디게만 하므로, 사용을 지양하는 것이 좋습니다. 대신에 사용자들로 하여금 바로 app을 몰입할 수 있게 하세요. 그럼에도 당신의 app이 튜토리얼이나 시작 단계가 필요하다고 생각한다면, 그것을 넘어갈 수 있는 방법을 같이 제공해주고 다시는 사용자에게 보여주지 않도록 하는 것이 좋습니다.</p>
 
-<p><strong>Anticipate the need for help.</strong> Proactively look for times when people might be stuck. A game, for example, could casually show useful tips when paused or when a character isn’t advancing. Let users replay tutorials in case they miss something the first time.</p>
+<p><strong>도움이 필요한 순간을 예상하세요.</strong> 미리미리 사용자가 어려워 할만한 지점을 찾으세요. 예를 들어, 한 게임에서는 일시정지 되었을 때나 캐릭터가 발전하지 않는 때에 간단하게 유용한 팁들을 보여줍니다. 또한, 첫 번째 실행에서 무언가를 놓쳤을 사용자들을 위해서 튜토리얼을 다시 시작할 수 있도록 하는 것이 좋습니다. </p>
 
-<p><strong>Stick to the essentials in tutorials.</strong> It’s fine to provide guidance for beginners, but education isn’t a substitute for great app design. First and foremost, make your app intuitive. If too much guidance is needed, revisit the design of your app.</p>
+<p><strong>튜토리얼 안에는 정말 필수적인 것만 넣으세요.</strong> 초보자를 위한 가이드를 제공하는 것은 좋지만, 가르치려고 하는 것은 훌륭한 app 디자인을 위한 방법이 아닙니다. 맨 먼저 우선적으로 당신의 app을 직관적으로 만드세요. 너무 많은 설명이 필요하다면, app의 디자인을 다시 검토해보세요.</p>
 
-<p><strong>Make learning fun and discoverable.</strong> Learning by doing is a lot more fun and effective than reading a list of instructions. Use animation and interactivity to teach gradually and in context. Avoid displaying screenshots that appear interactive.</p>
+<p><strong>배우는 과정은 재미있고 쉽게 인지할 수 있도록 하세요.</strong> 지시사항이 나열된 리스트를 읽는 것보다는, 직접 해보면서 배우는 것이 더욱 재미있고 효과적입니다. 애니메이션과 대화형 상호작용을 통해 흐름에 따라 점진적으로 가르쳐주세요. 마치 상호작용할 수 있을 법한 스크린샷을 보여주는 것은 되도록 피하는 것이 좋습니다.</p>
 
-<p><strong>Avoid asking for setup information up front.</strong> People expect apps to just work. Design your app for the majority and let the few that want a different configuration adjust settings to meet their needs. To the extent possible, derive setup information from device settings and defaults, or through a synchronization service, such as iCloud. If you must ask for setup information, prompt for it in-app the first time, and let users modify it later in your app’s settings.</p>
+<p><strong>전면에서 설정을 위한 정보를 물어보지 마세요.</strong> 사용자는 app이 바로 작동되는 것을 기대합니다. app을 디자인은 다수의 사용자를 위하도록 한 후에, 다른 형태를 원하는 일부 사용자를 위해 필요에 따라 설정 변경이 가능하게 해주세요. 가능하다면 기기 자체의 설정과 디폴트 값, 혹은 iCloud와 같은 동기화 서비스를 통해 정보를 가져오면 좋습니다. 설정을 위한 정보를 꼭 물어봐야 한다면, app을 처음 실행할 때 app 안에서 창을 열어 물어보고, 추후에 사용자가 app의 설정에서 변경이 가능하도록 하세요.</p>
 
-<p><strong>Avoid showing in-app licensing agreements and disclaimers.</strong> Let the App Store display agreements and disclaimers before your app is downloaded. If you must include these items within your app, integrate them in a balanced way that doesn’t disrupt the user experience.</p>
+<p><strong>인앱 라이센스 동의서나 면책 조항는 보여주지 마세요.</strong> 동의서나 면책 조항은 App Store에서 app이 다운로드 되기 전에 보여주는 것이 좋습니다. app 안에 꼭 넣고 싶다면, 사용자 경험을 방해하지 않는 선에서 균형 있게 넣도록 하세요.</p>
 
-<p><strong>Restore the previous state when your app restarts.</strong> Don't make people retrace steps to reach their previous location in your app. Preserve and restore your app’s state so they can continue where they left off.</p>
+<p><strong>app을 재시작 할때는 이전의 상태를 복구하세요.</strong> app 안에서 사용자가 다시 이전에 사용했던 지점을 찾기 위해 다시 찾아가도록 하지 마세요. app의 상태를 보존해두고 복구시켜 사용자가 떠난 지점에서 바로 경험을 지속할 수 있도록 하세요.</p>
 
-<p><strong>Don’t ask people to rate your app too quickly or too often.</strong> Asking for a rating too soon or too frequently is annoying and decreases the amount of useful feedback you receive. To encourage well-considered feedback, give people time to form an opinion about your app before asking for a rating. Always provide a way to opt out of rating prompts and never force users to rate your app.</p>
+<p><strong>app에 대한 평점을 너무 빨리 혹은 너무 자주 요청하지 마세요.</strong> 평점을 너무 일찍 혹은 자주 요청하는 것은 사용자를 성가시게 할 뿐더러 당신이 받을 수 있는 유용한 피드백을 감소시킬 것입니다. 양질의 피드백을 받기 위해서는, 사용자에게 평점을 묻기 전에 의견이 생길만한 충분한 시간을 주도록 하세요. 절대 사용자에게 app의 평점 내리기를 강요하지 말고, 언제든지 평점을 요구하는 메시지에서 나갈 방법이 제공되어야 합니다.</p>
 
-<p><strong>Don’t encourage rebooting.</strong> Restarting takes time and makes your app seem unreliable and hard to use. If your app has memory or other issues that make it difficult to run unless the system has just booted, you need to address those issues.</p>
+<p><strong>재시동을 권장하지 마세요.</strong> 재시동을 하면 시간이 걸릴 뿐더러 당신의 app이 사용하기 어렵고 불안전하다는 느낌을 줍니다. 만약 app이 (방금 재시동을 한 경우 이외에) 작동이 안되는 메모리 혹은 다른 문제가 생겼다면, 그러한 문제 사항에 대해 고심해봐야 합니다.</p>
 
 					</div>
 				</section>
