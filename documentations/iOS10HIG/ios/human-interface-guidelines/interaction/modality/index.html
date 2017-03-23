@@ -500,37 +500,37 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 </div>
 </div>
 
-<p><strong>Minimize the use of modality.</strong> Generally, people prefer to interact with apps in nonlinear ways. Consider creating a modal context only when it’s critical to get someone’s attention, when a task must be completed or abandoned to continue using the app, or to save important data.</p>
+<p><strong>모달의 사용을 최소화하세요.</strong> 일반적으로 사용자는 선형적이지 않은 방법으로 app과 상호작용하는 것을 선호합니다. app 사용을 위해 작업을 완료하거나 그만두어야 하는, 혹은 중요한 정보를 저장해야 하는 경우와 같이, 주의를 꼭 끌어야만 하는 상황에서만 모달을 사용하세요.</p>
 
-<p><strong>Provide an obvious and safe way to exit a modal task.</strong> Make sure people always know the outcome of their action when they dismiss a modal view.</p>
+<p><strong>모달 작업을 종료할 분명하고 안전한 방법을 제공하세요.</strong> 사용자가 모달 뷰를 취소했을 때의 행동의 결과가 어떻게 될지 항상 알 수 있도록 확인하세요.</p>
 
-<p><strong>Keep modal tasks simple, short, and narrowly focused.</strong> Don’t create an app within your app. If a modal task is too complex, people can lose sight of the task they suspended when they entered the modal context. Be especially wary of creating modal tasks that involve a hierarchy of views because users can get lost and forget how to retrace their steps. If a modal task must contain subviews, provide a single path through the hierarchy and a clear path to completion. Avoid using Done buttons for things other than completing the task.</p>
+<p><strong>모달 작업은 간단하고, 짧고, 좁은 범위를 다루어야 합니다.</strong> app 안에 새로운 app을 만들지 마세요. 모달 작업을 너무 복잡하게 만들면, 사용자는 모달을 보면서 원래 진행 중이던 작업이 무엇이었는지 잃어버리게 될 것입니다. 특히 계층적인 뷰를 포함하는 모달 작업을 만드는 경우에는 사용자가 원래 단계를 어떻게 거슬러 올라가는지 잊어버리고 길을 잃게 될 수 있으므로 신중하게 사용해야 합니다. 만약 모달 작업이 서브뷰(subview)를 포함해야 한다면, 계층적으로 하나의 길만을 만들어 완료에 이를 수 있도록 하세요. 완료 버튼은 작업을 완료할 때 사용하는 것 빼고는 사용하지 않는 것이 좋습니다.</p>
 
-<p><strong>Display a title that identifies a task, if appropriate.</strong> You might also provide text in other portions of the view that more fully describes the task or provides guidance.</p>
+<p><strong>적합한 상황이라면, 작업을 명시하는 제목을 표시하세요.</strong> 또한 뷰의 다른 부분에 텍스트를 제공해 작업에 대해 더 자세히 묘사하고 도움을 줄 수도 있습니다.</p>
 
-<p><strong>Reserve alerts for delivering essential—and ideally actionable—information.</strong> An alert interrupts the experience and requires a tap to dismiss, so it’s important for people to feel that the intrusion is warranted. To learn more, see <a href="../../ui-views/alerts/index.html">Alerts</a>.</p>
+<p><strong>Alert(알림) 기능은 정말 필수적인(이상적으로 실행할만한) 정보 전달을 위해 남겨두세요.</strong> Alert는 app 경험을 차단하고 취소를 위해 탭을 눌러야 하므로, 사용자가 이러한 방해가 정당하다고 느껴야 할 정도로 중요합니다. 자세한 내용은 <a href="../../ui-views/alerts/index.html">Alerts</a>를 보세요.</p>
 
-<p><strong>Respect notification preferences.</strong> In Settings, people specify how they want to receive notifications from your app. Abide by these preferences so they aren’t tempted to turn off your app’s notifications entirely.</p>
+<p><strong>알림의 기존 설정을 고려하세요.</strong> 설정에서 사용자는 app에서 알림을 어떻게 받고 싶은지 설정할 수 있습니다. 사용자가 완전히 app의 알림을 꺼버리게 하지 않도록, 기존 설정 사항을 지켜주세요.</p>
 
-<p><strong>Don’t display a modal view above a popover.</strong> With the possible exception of an alert, nothing should appear over a popover. In rare cases when you need to present a modal view after action is taken in a popover, close the popover before displaying the modal view.</p>
+<p><strong>Popover 위에 모달 뷰를 올리지 마세요.</strong> Alert에서의 가능한 예외를 제외하면, popover 위에는 어떤 것도 나타나서는 안됩니다. 정말 드물게 popover로 인해 모달 뷰가 뜨게 하는 상황이 생긴다면, 모달 뷰를 화면에 표시하기 전에 popover를 먼저 닫도록 하세요.</p>
 
-<p><strong>Coordinate modal view appearance with your app.</strong> A modal view may include a navigation bar, for example. When this is the case, use the same appearance as the navigation bar in your app.</p>
+<p><strong>모달 뷰의 생김새를 app과 동등하게 하세요.</strong> 예를 들어 모달 뷰가 네비게이션 바를 포함하고 있다면, app에서 사용하는 네비게이션 바와 같은 디자인을 적용하세요.</p>
 
-<p><strong>Choose an appropriate modal view style.</strong> You can use any of these styles:</p>
+<p><strong>적절한 모달 뷰 스타일을 선택하세요.</strong> 다음과 같은 스타일 중에서 선택할 수 있습니다:</p>
 
 <div class="row">
     <div class="col-50">
 
 <p><img src="https://developer.apple.com/ios/human-interface-guidelines/images/fullScreen_modality.png" alt="" title="" width="167" height="128" /></p>
 
-<p><strong>Full screen.</strong> Covers the entire screen. Use for a potentially complex task that can be completed within the context of the modal view.</p>
+<p><strong>풀 스크린.</strong> 화면 전체를 덮습니다. 모달 뷰 안에서 완료되어야 할 작업이 복잡할 때 사용합니다.</p>
 
 </div>
     <div class="col-50">
 
 <p><img src="https://developer.apple.com/ios/human-interface-guidelines/images/pageSheet_modality.png" alt="" title="" width="167" height="128" /></p>
 
-<p><strong>Page sheet.</strong> Partially covers the underlying content on larger devices held in landscape orientation. All uncovered areas are dimmed to prevent interaction with them. Covers the entire screen on smaller devices and in portrait orientation. Use for a potentially complex task that can be completed within the context of the modal view.</p>
+<p><strong>Page sheet.</strong> 큰 기기의 가로화면에서 콘텐츠를 일부분 가립니다. 가려지지 않은 영역은 상호작용이 안되도록 희미하게 변합니다. 큰 기기의 세로화면이나 작은 기기에서는 전체화면을 덮습니다. 모달 뷰 안에서 완료되어야 할 작업이 복잡할 때 사용합니다.</p>
 
 </div>
 </div>
@@ -540,21 +540,21 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 
 <p><img src="https://developer.apple.com/ios/human-interface-guidelines/images/formSheet_modality.png" alt="" title="" width="167" height="128" /></p>
 
-<p><strong>Form sheet.</strong> Appears centered on screen, but may be repositioned if a keyboard is visible. All uncovered areas are dimmed to prevent interaction with them. May cover the entire screen on smaller devices. Use for gathering information.</p>
+<p><strong>Form sheet.</strong> 화면 중앙에 나타나지만, 키보드가 있으면 위치가 변할 수 있습니다. 가려지지 않은 부분은 상호작용이 안되도록 희미하게 변합니다. 작은 기기에서는 전체 화면을 덮을 수도 있습니다. 정보를 수집할 경우에 사용합니다.</p>
 
 </div>
     <div class="col-50">
 
 <p><img src="https://developer.apple.com/ios/human-interface-guidelines/images/currentContext_modality.png" alt="" title="" width="370" height="128" /></p>
 
-<p><strong>Current context.</strong> Appears at the same size as its parent view. Use for displaying modal content within a split view pane, popover, or other view that is not full-screen.</p>
+<p><strong>Current context.</strong> 부모 뷰(parent view)와 같은 크기로 나타납니다. 분할 뷰, popover, 혹은 전체 화면이 아닌 다른 뷰 안에서 모달을 띄울 때 사용합니다.</p>
 
 </div>
 </div>
 
-<p><strong>Choose an appropriate transition style for revealing a modal view.</strong> Use a transition style that coordinates with your app and enhances the awareness of the temporary context shift. The default transition vertically slides the modal view up from the bottom of the screen and back down once dismissed. The flip-style transition appears to flip a view horizontally to reveal the modal view. Visually, the modal view looks like the back of the current view. It flips back once dismissed. Use consistent modal transition styles throughout your app.</p>
+<p><strong>모달 뷰를 띄울 때 적절한 전환 효과를 선택하세요.</strong> app과 동일한 전환 효과를 사용해 일시적인 맥락 변화를 인지할 수 있도록 도우세요. 기본 효과는 모달 뷰가 아래에서 위로 미끄러져 올라오고, 취소하면 다시 아래로 내려가는 형태입니다. Flip-style 전환은 뷰를 가로 방향으로 넘겨 모달 뮤를 보여주고, 취소하면 다시 넘어가며 돌아갑니다. app 안에서는 모달 전환 효과를 일관되게 사용하세요.</p>
 
-<p>For modal view implementation details, see <a href="https://developer.apple.com/reference/uikit/uiviewcontroller">UIViewController</a> and <a href="https://developer.apple.com/reference/uikit/uipresentationcontroller">UIPresentationController</a>.</p>
+<p>모달 뷰 실행과 관련한 더 자세한 사항은 <a href="https://developer.apple.com/reference/uikit/uiviewcontroller">UIViewController</a> 와 <a href="https://developer.apple.com/reference/uikit/uipresentationcontroller">UIPresentationController</a>를 참고하세요.</p>
 
 					</div>
 				</section>
