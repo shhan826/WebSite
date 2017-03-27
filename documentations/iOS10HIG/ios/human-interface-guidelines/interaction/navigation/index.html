@@ -479,14 +479,14 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
 
 					<!-- Main content -->
 					<div class="col-80 hig-content" data-hires="true">
-						<h2 id="navigation">Navigation</h2>
+						<h2 id="navigation">네비게이션</h2>
 
-<p>People tend to be unaware of an app’s navigation until it doesn’t meet their expectations. Your job is to implement navigation in a way that supports the structure and purpose of your app without calling attention to itself. Navigation should feel natural and familiar, and shouldn’t dominate the interface or draw focus away from content. In iOS, there are three main styles of navigation.</p>
+<p>사용자는 예상 못했던 탐색 방식이 나오기 전까지는 그 app의 네비게이션에 대해 인식하지 않는 경향이 있습니다. 네비게이션 자체에 의식하지 않아도 될 정도로 네비게이션을 향상시켜, app의 구조와 목적을 보조하도록 만드세요. 네비게이션은 자연스럽고 친숙해야 하며, 인터페이스를 짓누르거나 콘텐츠에 대한 집중을 흩트리면 안됩니다. iOS 안에는 네비게이션의 세 가지 스타일이 있습니다.</p>
 
 <div id="hierarchical-navigation" class="row">
     <div class="col-100">
 
-<p><strong>Hierarchical navigation.</strong> Make one choice per screen until you reach a destination. To go to another destination, you must retrace your steps or start over from the beginning and make different choices. Settings and Mail use this navigation style.</p>
+<p><strong>계층적 네비게이션.</strong> 하나의 목적지에 도달하기 위해 각 스크린에서 하나의 경로만 있습니다. 다른 목적지에 도달하기 위해서는 다시 처음으로 돌아가거나 몇 단계 돌아가서 다른 선택을 해나가면 됩니다. 설정과 Mail에서 이러한 네비게이션 스타일을 사용합니다.</p>
 
 <p><img src="https://developer.apple.com/ios/human-interface-guidelines/images/NavigationHierarchical-Graphic.png" alt="" title="" class="center scale" width="315" height="219" /></p>
 
@@ -497,7 +497,7 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
     <div class="col-100">
 
 <p><br><br>
-<strong>Flat navigation.</strong> Switch between multiple content categories. Music and App Store use this navigation style.</p>
+<strong>평평한 네비게이션.</strong> 여러 콘텐츠 카테고리 사이를 전환합니다. 음악과 App Store가 이러한 네비게이션 스타일을 사용합니다.</p>
 
 <p><img src="https://developer.apple.com/ios/human-interface-guidelines/images/NavigationFlat-Graphic.png" alt="" title="" class="center scale" width="315" height="101" /></p>
 
@@ -508,32 +508,32 @@ var s_code=s.t();if(s_code)document.write(s_code)</script>
     <div class="col-100">
 
 <p><br><br>
-<strong>Content-driven or experience-driven navigation.</strong> Move freely through content, or the content itself defines the navigation. Games, books, and other immersive apps generally use this navigation style.</p>
+<strong>콘텐츠 중심 혹은 경험 중심 네비게이션.</strong> 콘텐츠를 통해 자유롭게 이동하거나, 콘텐츠 자체가 네비게이션을 정의합니다. 게임, 책과 같은 몰입형 app은 일반적으로 이러한 네비게이션 스타일을 사용합니다.</p>
 
 <p><img src="https://developer.apple.com/ios/human-interface-guidelines/images/NavigationExperienceDriven-Graphic.png" alt="" title="" class="center scale" width="600" height="150" /><br></p>
 
 </div>
 </div>
 
-<p>Some apps combine multiple navigation styles. For example, an app that uses flat navigation may implement hierarchical navigation within each category.</p>
+<p>일부 app은 여러개의 네비게이션 스타일을 병합해 사용하기도 합니다. 예를 들어, 평평한 네비게이션을 사용하는 app에서 각 카테고리 안에서는 계층적 네비게이션을 사용할 수 있습니다.</p>
 
-<p><strong>Always provide a clear path.</strong> People should always know where they are in your app and how to get to their next destination. Regardless of navigation style, it’s essential that the path through content is logical, predictable, and easy to follow. In general, give people one path to each screen. If they need to see a screen in multiple contexts, consider using an action sheet, alert, popover, or modal view. To learn more, see <a href="../../ui-views/action-sheets/index.html">Action Sheets</a>, <a href="../../ui-views/alerts/index.html">Alerts</a>, <a href="../../ui-views/popovers/index.html">Popovers</a>, and <a href="../modality/index.html">Modality</a>.</p>
+<p><strong>항상 명확한 경로를 제공하세요.</strong> 사용자는 항상 app 안에서 자신이 어디에 있는지, 그리고 어떻게 다음 목적지로 향할지 알 수 있어야 합니다. 네비게이션 스타일을 고려하지 않더라도, 콘텐츠에서의 경로가 논리적이고, 예측 가능하고, 따라가기 쉬워야 한다는 것은 필수적인 사항입니다. 일반적으로 사용자에게는 각 화면마다 하나의 경로를 주게 됩니다. 만약 둘 이상의 맥락 안에서 스크린을 볼 필요가 있다면, action sheet, alert, popover, modal view 사용을 고려해보세요. 더 알고 싶으면, <a href="../../ui-views/action-sheets/index.html">Action Sheets</a>, <a href="../../ui-views/alerts/index.html">Alerts</a>, <a href="../../ui-views/popovers/index.html">Popovers</a>, <a href="../modality/index.html">Modality</a>를 보세요.</p>
 
-<p><strong>Design an information structure that makes it fast and easy to get to content.</strong> Organize your information structure in a way that requires a minimum number of taps, swipes, and screens.</p>
+<p><strong>정보 구조를 콘텐츠에 빠르고 쉽게 도달할 수 있도록 디자인하세요.</strong> 최소한의 탭, 스와이프, 스크린으로 접근할 수 있는 정보 구조를 구성하세요.</p>
 
-<p><strong>Use touch gestures to create fluidity.</strong> Make it easy to move through your interface with minimum friction. For example, you could let people swipe from the side of the screen to return to the previous screen.</p>
+<p><strong>유동성을 위해 터치 제스처를 사용하세요.</strong> 최소한의 마찰로만 인터페이스를 통해 쉽게 움직일 수 있도록 하세요. 예를 들어, 사용자가 화면의 양쪽 면을 스와이프해서 이전의 화면으로 돌아가게 할 수 있습니다.</p>
 
-<p><strong>Use standard navigation components.</strong> Whenever possible, use standard navigation controls such as page controls, tab bars, segmented controls, table views, collection views, and split views. Users are already familiar with these controls, and will intuitively know how to get around your app.</p>
+<p><strong>표준 네비게이션 요소를 사용하세요.</strong> 가능하면 page control, tab bar, segmented control, table view, collection view, split view와 같은 표준 네비게이션 요소를 사용하세요. 사용자에게 이미 친숙한 요소기 때문에 직관적으로 당신의 app을 돌아다닐 수 있도록 합니다.</p>
 
-<p><strong>Use a navigation bar to traverse a hierarchy of data.</strong> The navigation bar’s title can show the current position in the hierarchy, and the back button makes it easy to return to the previous location. For specific guidance, see <a href="../../ui-bars/navigation-bars/index.html">Navigation Bars</a>.</p>
+<p><strong>네비게이션 바(Navigation bar)를 사용해 데이터의 계층을 이동시키세요.</strong> 네비게이션 바는 제목을 통해 계층에서의 현재 위치를 보여줄 수 있고, 뒤로 가기 버튼은 이전 장소로 쉽게 돌아갈 수 있도록 합니다. 더 자세한 사항은 <a href="../../ui-bars/navigation-bars/index.html">Navigation Bars</a>를 보세요.</p>
 
-<p><strong>Use a tab bar to present peer categories of content or functionality.</strong> A tab bar lets people quickly and easily switch between categories, regardless of the current location. For specific guidance, see <a href="../../ui-bars/tab-bars/index.html">Tab Bars</a>.</p>
+<p><strong>탭바(Tab bar)를 사용해 동등한 범주의 콘텐츠나 기능을 보여주세요.</strong> 탭바는 현재 위치가 어디이던 간에, 빠르고 쉽게 카테고리 사이를 움직일 수 있게 합니다. 더 자세한 사항은 <a href="../../ui-bars/tab-bars/index.html">Tab Bars</a>를 보세요.</p>
 
-<p><strong>Use a page control when you have multiple pages of the same type of content.</strong> A page control clearly communicates the number of pages available and which one is currently active. The Weather app uses a page control to show location-specific weather pages. For specific guidance, see <a href="../../ui-controls/page-controls/index.html">Page Controls</a>.</p>
+<p><strong>페이지 컨트롤(Page control)을 사용해 같은 유형의 콘텐츠를 여러 페이지로 담아내세요.</strong> 페이지 컨트롤은 컨텐츠가 총 몇 페이지가 있고, 현재 어느 페이지에 있는지를 명확하게 알려줍니다. 날씨 app은 페이지 컨트롤을 이용해 지역에 따른 날씨 페이지를 보여줍니다. 더 자세한 사항은 <a href="../../ui-controls/page-controls/index.html">Page Controls</a>을 보세요.</p>
 
 <div class="note">
 
-<p><strong>Tip</strong> Segmented controls and toolbars don’t enable navigation. Use a segmented control to organize information into different categories. Use a toolbar to provide controls for interacting with the current context. For additional information on these types of elements, see <a href="../../ui-controls/segmented-controls/index.html">Segmented Controls</a> and <a href="../../ui-bars/toolbars/index.html">Toolbars</a>.</p>
+<p><strong>Tip</strong> Segmented control과 toolbar에선 네비게이션을 사용하지 않습니다. Segmented control은 정보를 다른 범주에 넣을 때 사용하고, Toolbar는 현재 콘텐츠와 상호작용할 때 사용하세요. 추가적인 정보는 <a href="../../ui-controls/segmented-controls/index.html">Segmented Controls</a>과 <a href="../../ui-bars/toolbars/index.html">Toolbars</a>에서 찾아보세요.</p>
 
 </div>
 
